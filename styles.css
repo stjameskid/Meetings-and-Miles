@@ -1,15 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #008ECC; /* Blue from the logo */
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 #quiz-container, #result-container {
-    background: white;
+    background: #FFFFFF; /* White background for contrast */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -19,40 +22,57 @@ body {
 }
 
 h1, h2 {
-    color: #333;
+    color: #FFD700; /* Yellow from the logo */
 }
 
 .options {
-    margin-top: 20px;
+    text-align: left;
 }
 
-.option {
+label {
     display: block;
     margin: 10px 0;
-    padding: 10px;
-    background: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+    font-size: 1rem;
+    color: #333;
 }
 
-.option:hover {
-    background: #0056b3;
+input[type="radio"] {
+    margin-right: 10px;
 }
 
 #next-btn {
     margin-top: 20px;
-    padding: 10px 20px;
-    background: #28a745;
-    color: white;
+    padding: 15px;
+    background: #FFCC00; /* Yellow from the logo */
+    color: #000000; /* Black text for better contrast */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
+    width: 100%;
+    font-size: 1rem;
 }
 
 #next-btn:hover {
-    background: #218838;
+    background: #FFD700; /* Slightly brighter yellow on hover */
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+
+    #quiz-container, #result-container {
+        padding: 15px;
+        width: 100%;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    #next-btn {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
 }
