@@ -29,7 +29,7 @@ body {
 }
 
 h1, h2 {
-    color: #FFD700; /* Yellow from the logo */
+    color: #000000; /* Changed to black for better readability */
 }
 
 .options {
@@ -68,18 +68,3 @@ input[type="radio"] {
     body {
         padding: 5px;
     }
-
-    #quiz-container, #result-container {
-        padding: 15px;
-        width: 100%;
-    }
-
-    label {
-        font-size: 0.9rem;
-    }
-
-    #next-btn {
-        padding: 12px;
-        font-size: 0.9rem;
-    }
-}
