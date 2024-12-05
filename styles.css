@@ -21,6 +21,13 @@ body {
     text-align: center;
 }
 
+#quiz-logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px; /* Adjust as needed */
+    height: auto;
+}
+
 h1, h2 {
     color: #FFD700; /* Yellow from the logo */
 }
